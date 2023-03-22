@@ -1,40 +1,36 @@
-# P.Bluebberry
-The tool is designed to simplify the process of running specific actions against AWS services.
+# AWS Access Key Tool
 
-## Getting Started
+This is a Python-based tool for managing AWS access keys.
 
-### Prerequisites
+## Features
 
-To use this tool, you'll need to have the following:
+* Supports both existing and new AWS access keys
+* Validates the provided access keys by attempting to list AWS regions
+* Provides a simple UI for selecting options once authenticated and validated
 
-- Python 3.6 or later installed
-- Boto3 library installed (`pip install boto3`)
-- PySimpleGUI library installed (`pip install PySimpleGUI`)
+## Requirements
 
-### Installation
+To use this tool, you will need:
 
-To install the tool, simply clone the repository and navigate to the project directory:
+* Python 3.x
+* PySimpleGUI package (`pip install PySimpleGUI`)
+* Boto3 package (`pip install boto3`)
 
-git clone https://github.com/mrlfarano/P.Blueberry.git
-cd P.Blueberry/
+You can install the required packages by running the following command in your project directory:
 
-### Usage
+pip3 install -r requirements.txt
 
-To use the tool, run the `main.py` file:
+
+You will also need valid AWS access keys to use the tool. If you do not have access keys, you can generate them in the AWS Management Console.
+
+## Usage
+
+To use the tool, simply run the `main.py` file with Python:
 
 python main.py
 
-You'll be prompted to enter your AWS Access Key ID and Secret Access Key, and optionally indicate whether you want to use existing keys. Upon clicking the "Connect" button, the tool will attempt to validate the entered authentication objects by attempting to list the available AWS regions using Boto3. If the authentication objects are valid, a success message will be displayed. If the authentication objects are invalid, an error message will be displayed.
-
-## Contributing
-
-Contributions to the AWS Access Key Tool are welcome and encouraged! To contribute, simply fork the repository, create a new branch for your changes, and submit a pull request. For major changes, please open an issue first to discuss your proposed changes.
+Follow the prompts to enter your AWS access key ID and secret access key, or use existing keys if you already have them. Once authenticated and validated, you will be presented with a UI for selecting options.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI)
-- [Boto3](https://github.com/boto/boto3)
+This project is licensed under the MIT License - see the `LICENSE` file for details.
