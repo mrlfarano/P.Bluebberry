@@ -18,7 +18,7 @@ To use this tool, you will need:
 
 You can install the required packages by running the following command in your project directory:
 
-(`pip3 install -r requirements.txt`)
+`pip3 install -r requirements.txt`
 
 
 You will also need valid AWS access keys to use the tool. If you do not have access keys, you can generate them in the AWS Management Console.
@@ -27,7 +27,7 @@ You will also need valid AWS access keys to use the tool. If you do not have acc
 
 To use the tool, simply run the `main.py` file with Python:
 
-(`python main.py`)
+`python main.py`
 
 Follow the prompts to enter your AWS access key ID and secret access key, or use existing keys if you already have them. Once authenticated and validated, you will be presented with a UI for selecting options.
 
